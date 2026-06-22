@@ -1,6 +1,6 @@
 #' EDI销售订单查询
 #'
-#' @param dms_token
+#' @param erp_token
 #' @param FBillNO
 #'
 #' @return 两个数的和
@@ -8,14 +8,14 @@
 #'
 #' @examples
 #' EdiSalOrder_view()
-EdiSalOrder_view <- function(dms_token,FBillNO) {
+EdiSalOrder_view <- function(erp_token,FBillNO) {
 
 
   sql=paste0("
              exec rds_proc_Edi_GetOrderNo '",FBillNO,"'
              ")
 
-  res = tsda::sql_select2(token =dms_token ,sql = sql)
+  res = tsda::sql_select2(token =erp_token ,sql = sql)
 
 
 

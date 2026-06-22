@@ -4,7 +4,7 @@
 \alias{EdiSalOrder_view}
 \title{EDI销售订单查询}
 \usage{
-EdiSalOrder_view(dms_token, FBillNO)
+EdiSalOrder_view(erp_token, FBillNO)
 }
 \arguments{
 \item{FBillNO}{}
